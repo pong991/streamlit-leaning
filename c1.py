@@ -51,6 +51,8 @@ def get_chatmodel_responses(question):
 # 创建一个文本输入框，用户可以在其中输入问题 ######################################################
 input = st.text_input("Input: ", key="input")
 # 调用 get_chatmodel_responses 函数，获取回答
+
+# 当用书输入时，LLM才会作答
 if input:
     response = get_chatmodel_responses(input)
 
